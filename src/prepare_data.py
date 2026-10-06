@@ -24,6 +24,7 @@ LOCATIONS_OUT = PROCESSED_DIR / "locations.csv"
 PAYMENTS_OUT = PROCESSED_DIR / "payment_types.csv"
 
 PAYMENT_TYPES = {
+    0: "Unknown / not recorded",
     1: "Credit card",
     2: "Cash",
     3: "No charge",
