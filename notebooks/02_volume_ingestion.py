@@ -38,6 +38,7 @@ payment_types = (
     trips.write
     .format("delta")
     .mode("overwrite")
+    .option("overwriteSchema", "true")
     .saveAsTable("trips_raw")
 )
 
@@ -45,6 +46,7 @@ payment_types = (
     locations.write
     .format("delta")
     .mode("overwrite")
+    .option("overwriteSchema", "true")
     .saveAsTable("locations_raw")
 )
 
@@ -52,6 +54,7 @@ payment_types = (
     payment_types.write
     .format("delta")
     .mode("overwrite")
+    .option("overwriteSchema", "true")
     .saveAsTable("payment_types_raw")
 )
 
